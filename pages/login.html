@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+
+
+
+    <!-- SweetAlert for Alerts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="/pages/login.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <div class="input-group">
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <span class="toggle-password" onclick="togglePassword()">👁️</span>
+        </div>
+        <button class="btn-primary" onclick="handleLogin()">Login</button>
+        <button class="btn-google" onclick="handleGoogleLogin()">Login with Google</button>
+        <span class="forgot-password" onclick="forgotPassword()">Forgot your password?</span>
+    </div>
+
+  <script src="/pages/login.js"> </script>
+
+</body>
+
+</html>
